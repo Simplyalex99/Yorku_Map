@@ -123,6 +123,12 @@ button.submitButton:active {
   }
 }
 
+#map{
+
+    height:200px;
+    width: 30%;
+}
+
 @media screen and (max-width: 800px) {
   .main-container {
     flex-direction: column;

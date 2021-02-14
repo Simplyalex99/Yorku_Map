@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src = "index.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" title="style" />
     <script
       src="https://kit.fontawesome.com/d67803a186.js"
@@ -30,7 +31,7 @@
             <div class="dropdown">
               <button class="dropbtn"><b id = "search-option-text">Search by Building code</b></button>
               <div class="dropdown-content">
-                <a href="#" id = "course">Course</a>
+                <a href="#" id = "course" >Course</a>
                 <a href="#" id="buidling">Building Code</a>
                 <a href="#" id="address">Address</a>
               </div>
@@ -67,9 +68,34 @@
       </div>
     </section>
      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+     <script>
+     
+function initMap(){
+
+
+var options = {
+zoom:8,
+center: {lat: 43.7705 ,lng : -79.5022}
+
+}
+
+
+var map = new google.maps.Map(document.getElementById("map"),options);
+
+}
+    
+     
+     </script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSrKLdSzj-UEtMpEfR1tKPT4mRuBfhe4k&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSrKLdSzj-UEtMpEfR1tKPT4mRuBfhe4k&callback=initMap"
       async
-    ></script>
+    >
+
+
+    </script>
+
+
+
   </body>
 </html>
