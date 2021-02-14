@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Class Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script
+      src="https://kit.fontawesome.com/d67803a186.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section>
+      <div class="searchsite">
+        <div class="header">
+          <br /><br />
+          <p><b>Welcome to</b></p>
+          <br />
+          <h1>My Class Finder</h1>
+          <br />
+        </div>
+        <div class="main-container">
+          <div class="left">
+            <div class="dropdown">
+              <button class="dropbtn"><b>Search by Building code</b></button>
+              <div class="dropdown-content">
+                <a href="#">Course</a>
+                <a href="#">Building Code</a>
+                <a href="#">Address</a>
+              </div>
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <i class="fas fa-search icon"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Enter the start point"
+                name="start"
+              />
+            </div>
+
+            <div class="input-container">
+              <i class="fas fa-search icon"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Enter the end point"
+                name="end"
+              />
+            </div>
+
+            <button class="submitButton" type="submit">Submit</button>
+          </div>
+
+          <div class="image-right">
+           <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSrKLdSzj-UEtMpEfR1tKPT4mRuBfhe4k&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
