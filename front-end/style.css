@@ -15,9 +15,23 @@ section {
   background-size: 400% 400%;
   animation: change 5s ease-in-out infinite;
 }
-.dropbtn {
+/* .dropbtn {
   box-sizing: border-box;
   width: 250px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+} */
+
+
+.dropbtn {
+  box-sizing: border-box;
+  width: 220px;
   height: 40px;
   padding: 10px;
   text-align: center;
@@ -87,6 +101,7 @@ h1 {
 }
 .main-container {
   display: flex;
+
 }
 .searchsite {
   margin-left: 30mm;
@@ -94,22 +109,34 @@ h1 {
 }
 .left {
   align-self: center;
+
 }
 .submitButton {
   height: 40px;
   width: 100px;
   text-align: center;
-  background-color: #3399ff;
+  background-color:   #0047AB; /*#3399ff;*/
   color: white;
   cursor: pointer;
+  border-radius: 5px;
+  border-style: none; 
 }
 button.submitButton:active {
   transform: translateY(4px);
 }
 
+.submitButton:hover{
+
+background-color: white;
+color: #3399ff;
+cursor:pointer
+
+}
+
 .image-right {
   align-self: center;
-  margin-left: 350px;
+  margin-left: 30%;
+ 
 }
 @keyframes change {
   0% {
@@ -125,8 +152,8 @@ button.submitButton:active {
 
 #map{
 
-    height:200px;
-    width: 30%;
+    height:300px;
+    width: 500px;
 }
 
 @media screen and (max-width: 800px) {
