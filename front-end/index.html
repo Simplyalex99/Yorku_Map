@@ -91,12 +91,24 @@ function showPosition(position) {
   lng = position.coords.longitude;
 }
 
+var locations = [ 
+[43.7705, -79.5022],[ 43.77427302006365, -79.50161636644535]
+];
 
-  var marker = new google.maps.Marker({
-  position:{lat:lat, lng:lng},
+var marker;
+for(let i=0; i < locations.length;i++){
+
+  marker = new google.maps.Marker({
+  position: new google.maps.LatLng(locations[i][0], locations[i][1] ),
   map:map
+  });
 
-  })
+
+
+
+
+}
+
 }
 
 
